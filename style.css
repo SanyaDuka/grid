@@ -1,0 +1,57 @@
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+    grid-template-areas: 
+    "Header Header Header"
+    "Nav Nav Nav"
+    "As Cont Cont"
+     "As Sec Sec"
+    "Footer Footer Footer";
+    color:#fff;
+    text-align: center;
+    font-size: 28px;
+}
+.Header
+{
+    grid-area: Header ;
+    background-color: rgb(12, 173, 146);
+    width: 90%;
+    height: 60px;
+}
+.Navigation
+{
+    grid-area: Nav;
+    background-color: rgb(12, 173, 39);
+    width: 90%;
+    height: 60px;
+}
+.Aside
+{
+    grid-area: As;
+    background-color: rgb(17, 226, 45);
+    width: 350px;
+    height: 590px;
+}
+.Content
+{
+    grid-area: Cont;
+    background-color: rgb(17, 149, 226);
+    width: 750px;
+    height: 280px;
+}
+.Section
+{
+    grid-area: Sec;
+    background-color: rgb(37, 33, 230);
+    width: 750px;
+    height: 280px;
+}
+.Footer
+{
+    grid-area: Footer;
+    background-color: rgb(12, 173, 146);
+    width: 90%;
+    height: 60px;
+}
